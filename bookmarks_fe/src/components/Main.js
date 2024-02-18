@@ -1,5 +1,13 @@
+import {Link} from "react-router-dom"
+
 function Main() {
-  return <div>Hello World</div>;
+  return (
+    <nav className="nav">
+      <Link to='/'>
+        <div>Bookmark</div>
+      </Link>
+    </nav>
+  )
 }
 
 export default Main;
