@@ -4,7 +4,7 @@ function Main() {
   return (
     <nav className="nav">
       <Link to='/'>
-        <div>Bookmarki</div>
+        <div>Bookmark</div>
       </Link>
     </nav>
   )
