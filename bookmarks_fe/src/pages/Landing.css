@@ -18,7 +18,7 @@
 
   .list-bookmarks {
     background-color: #e7e7e7;
-    
+
   }
 
   .bookmark {
@@ -32,13 +32,13 @@
 
   .bookmark h1, .bookmark h2, .bookmark h3 {
     margin: 10px 0;
-    color: 000000;
+    color: #43423c;
 
   }
 
   .Section-header {
     margin-left: 20px;
-    color: #43423c;
+    color: #ffffff;
   }
 
   input[type="input"], input[type="submit"] {
