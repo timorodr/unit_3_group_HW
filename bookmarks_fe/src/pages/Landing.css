@@ -1,0 +1,63 @@
+
+.container {
+    padding: 20px;
+  }
+
+  .add-bookmark, .list-bookmarks {
+    margin-bottom: 30px;
+
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .add-bookmark {
+    background-color: #f0f0f0;
+
+  }
+
+  .list-bookmarks {
+    background-color: #e7e7e7;
+    
+  }
+
+  .bookmark {
+    margin: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+  }
+
+  .bookmark h1, .bookmark h2, .bookmark h3 {
+    margin: 10px 0;
+    color: 000000;
+
+  }
+
+  .Section-header {
+    margin-left: 20px;
+    color: #43423c;
+  }
+
+  input[type="input"], input[type="submit"] {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+  }
+
+  input[type="submit"] {
+    cursor: pointer;
+    background-color: #FFF200;
+    color: rgb(0, 0, 0);
+    border: none;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
