@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Bookmark'd App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Bookmark'd is a simple web application that allows users to add and manage bookmarks for helpful websites in their coding journey. Users can add the title and URL of the website, and then access these bookmarks later. This project was built as part of a coding bootcamp assignment to practice building a full-stack CRUD application using Express.js for the backend and React.js for the frontend.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- View a list of all bookmarks
+- Click on a bookmark to visit the linked website
+- Add a new bookmark with a title and URL
+- Delete existing bookmarks
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Backend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The backend API is deployed and accessible at https://group-be-dev.onrender.com/
 
-### `npm test`
+It was built using Express.js and MongoDB for data storage.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Frontend
 
-### `npm run build`
+The frontend of the Bookmark'd app is deployed and accessible at https://dev--gregarious-gnome-a95061.netlify.app/.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+It was built using React.js and communicates with the backend API to fetch and manage bookmarks.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Wireframe
 
-### `npm run eject`
+### Model
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Bookmark Model**: Represents a bookmark with properties for title and URL.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### View
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Header
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Title**: "BOOKMARKS"
 
-## Learn More
+#### Add Bookmark Form
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Input Field 1**: Website Address (e.g., google.com)
+- **Input Field 2**: URL (e.g., [https://www.google.com](https://www.google.com/))
+- **Button**: "ADD"
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Bookmarked Websites Section
 
-### Code Splitting
+- Bookmark Cards
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  : Displayed below the form
 
-### Analyzing the Bundle Size
+  - **Title**: Name of the website
+  - **Clickable**: Clicking on the title takes you to the linked website
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Controller
 
-### Making a Progressive Web App
+- Express Routes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  - **GET /bookmarks**: Retrieve all bookmarks from the backend.
+  - **POST /bookmarks**: Create a new bookmark.
+  - **DELETE /bookmarks/:id**: Delete a bookmark by its ID.
+  - **PUT /bookmarks/:id**: Update a bookmark by its ID.
 
-### Advanced Configuration
+  ![Model-View-Controller Diagram](<M-V-C diagram.png>)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Getting Started
 
-### Deployment
+To run this project locally:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Clone this repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Install dependencies by running `npm install`.
+4. Start the development server by running `npm start`.
+5. Open [http://localhost:3000](http://localhost:3000/) in your browser to view the app.
 
-### `npm run build` fails to minify
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Frontend: React.js, React Router
+- Backend: Express.js, MongoDB
+- Deployment: Render (backend), --url-- (frontend)
+
+## Credits
+
+This project was created by Tim Rodriguez, Mackenzie Wicker, Yuliya Buiko, Roman Larionov as part of the General Assembly Software Engineer Immersive bootcamp curriculum.
