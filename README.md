@@ -24,6 +24,8 @@ The frontend of the Bookmark'd app is deployed and accessible at https://dev--gr
 It was built using React.js and communicates with the backend API to fetch and manage bookmarks.
 
 ## Screenshots
+![Screenshots](Screenshots.jpg)
+
 
 ## Wireframe
 
@@ -39,9 +41,9 @@ It was built using React.js and communicates with the backend API to fetch and m
 
 #### Add Bookmark Form
 
-- **Input Field 1**: Website Address (e.g., google.com)
+- **Input Field 1**: Website Name (e.g., Google)
 - **Input Field 2**: URL (e.g., [https://www.google.com](https://www.google.com/))
-- **Button**: "ADD"
+- **Button**: "Create Bookmark"
 
 #### Bookmarked Websites Section
 
@@ -61,7 +63,7 @@ It was built using React.js and communicates with the backend API to fetch and m
   - **DELETE /bookmarks/:id**: Delete a bookmark by its ID.
   - **PUT /bookmarks/:id**: Update a bookmark by its ID.
 
-  ![Model-View-Controller Diagram](<M-V-C diagram.png>)
+![Model-View-Controller Diagram](<M-V-C diagram.png>)
 
 ## Getting Started
 
@@ -77,7 +79,8 @@ To run this project locally:
 
 - Frontend: React.js, React Router
 - Backend: Express.js, MongoDB
-- Deployment: Render (backend), --url-- (frontend)
+- Deployment: Render (backend)
+- Deployment: Netlify (frontend)
 
 ## Credits
 
